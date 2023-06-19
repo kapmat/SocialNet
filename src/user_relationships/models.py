@@ -15,6 +15,6 @@ class Relationship(BaseMeta):
     __tablename__ = "relationship"
 
     id = Column(Integer, primary_key=True)
-    user_id = Column(Integer, ForeignKey(User.id))
-    another_user_id = Column(Integer, ForeignKey(User.id))
+    user_1_id = Column(Integer, ForeignKey(User.id))
+    user_2_id = Column(Integer, ForeignKey(User.id))
     status_id = Column(Integer, ForeignKey(Status.status_id))
